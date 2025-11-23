@@ -1,0 +1,10 @@
+services:
+  database:
+    image: postgres:16.11-alpine3.22
+    container_name: novo-database-1
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
